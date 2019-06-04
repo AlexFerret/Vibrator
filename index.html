@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BROWSER OBJECT MODEL</title>
+	<script src="funciones_bom.js"></script>
+</head>
+<body>
+
+	<h1>Browser object model</h1>
+	<p>Es el API que nos permite interactuar con el navegador y con sus funciones tecnológicas, que inclusive podrían ser conexiones con el hardware del dispositivo (camara, vibración o geolocalización)</p>
+
+	<h1>VIBRACIÓN (solo celular)</h1>
+	<button onclick="vibrar()">Vibrar</button>
+	<button onclick="sos()">SOS</button>
+	<button onclick="detener()">Detener</button>
+
+	<h1>GEOLOCALIZACIÓN</h1>
+	<button onclick="ubicar()">Geolocalizar</button>
+
+	<h1>ALMACENAMIENTO</h1>
+	<h3>Almacenamiento local</h3>
+	<input type="text" placeholder="Nombre" id="nombre">
+	<button onclick="guardarLocal()">Guardar</button>
+
+	<h3>Almacenamiento por sesión</h3>
+	<input type="text" placeholder="Telefono" id="telefono">
+	<button onclick="guardarSesion()">Guardar</button>
+
+	<h3>CAMARA WEB</h3>
+	<video autoplay="true" id="video"></video>
+	<button onclick="video()">Ver video</button>
+
+</body>
+</html>
